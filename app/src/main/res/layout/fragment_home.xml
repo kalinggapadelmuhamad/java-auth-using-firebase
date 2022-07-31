@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homeFragment"
+    android:id="@+id/parent">
+
+    <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="Apa Yang Ingin Kamu Pelajari Hari Ini ?"
+            android:textColor="@color/textMain"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/notification" />
+
+        <LinearLayout
+            android:id="@+id/searchPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHeader"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/bgForm"
+                android:maxLength="100"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/seearch"
+                android:hint="Pemrograman, Sistem Operasi..."
+                android:paddingLeft="10dp"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/button" />
+
+
+        </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/searchPage"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bannerImg"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_below="@+id/searchPage"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/imgbanner"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/txtbody"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bannerImg"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Recomended Mentor"
+                android:textColor="@color/textMain"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/kategori"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtbody"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Pemrograman"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/main"
+                    android:fontFamily="@font/poppinsbold"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Matematika"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/textMain"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Sains"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/textMain"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Astronomi"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/textMain"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mentor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="178dp"
+                    android:layout_height="185dp"
+                    android:background="@drawable/padel"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="15dp"/>
+
+                <ImageView
+                    android:layout_width="178dp"
+                    android:layout_height="185dp"
+                    android:background="@drawable/dafa"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="15dp"/>
+
+                <ImageView
+                    android:layout_width="178dp"
+                    android:layout_height="185dp"
+                    android:background="@drawable/hapis"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="15dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtfooter"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scrollView"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Butuh Bantuan ?"
+                android:textColor="@color/textMain"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/faq"
+                android:layout_below="@+id/txtfooter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/main"
+                    android:backgroundTint="@color/white"
+                    android:outlineAmbientShadowColor="@color/main"
+                    android:text="Tanya Seputar Mentorku"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button"
+                    android:outlineAmbientShadowColor="@color/main"
+                    android:text="Gabung Bersama Kami"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

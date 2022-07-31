@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1045110712622",
+    "project_id": "mentorku-d5a1a",
+    "storage_bucket": "mentorku-d5a1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045110712622:android:58337a463d0997e681f2bf",
+        "android_client_info": {
+          "package_name": "com.padel.uasmobileprogramming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045110712622-8ioojqgbjsp5akdicad7de1e0mh7fssl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.padel.uasmobileprogramming",
+            "certificate_hash": "c421765e33be1bde60eaffbcb762e05eac077bce"
+          }
+        },
+        {
+          "client_id": "1045110712622-udflqg700migjvupf5fl34uuv75i88p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_QjFOBN7mqTKnw58G3R0vYSwDC13voeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045110712622-udflqg700migjvupf5fl34uuv75i88p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

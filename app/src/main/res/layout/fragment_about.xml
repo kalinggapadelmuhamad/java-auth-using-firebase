@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imgSplah"
+        android:layout_width="131dp"
+        android:layout_height="131dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="-5dp"
+        android:src="@drawable/splashlogo" />
+
+    <TextView
+        android:id="@+id/textSplashmain"
+        android:layout_below="@+id/imgSplah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENTORKU"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18dp"
+        android:textColor="@color/textMain"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textSplashdesc"
+        android:layout_below="@+id/textSplashmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belajar Kapanpun Dan Dimanapun"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="14dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/textMain"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textabout"
+        android:layout_below="@id/textSplashdesc"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Mentorku adalah aplikasi yang mempertemukan seseorang dengan mentor mentor yang ada di sekitar mereka. Aplikasi ini dibuat guna menyelesaikan studi Mobile Programming 4TI-P2"/>
+
+    <TextView
+        android:id="@+id/textkelompok"
+        android:layout_below="@id/textabout"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Kalingga Padel Muhamad (2011010098) \n Teuku Dava Revanza (2011010108) \n Hapizd Asari (2011010113)"/>
+
+    <LinearLayout
+        android:id="@+id/faq"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textkelompok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/main"
+            android:backgroundTint="@color/white"
+            android:outlineAmbientShadowColor="@color/main"
+            android:text="Tanya Seputar Mentorku"/>
+
+        <Button
+            android:id="@+id/cp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:outlineAmbientShadowColor="@color/main"
+            android:text="Gabung Bersama Kami"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

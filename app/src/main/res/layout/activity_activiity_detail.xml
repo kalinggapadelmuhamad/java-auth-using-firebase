@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activiityDetail">
+    
+    <LinearLayout
+        android:id="@+id/imgHero"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:background="@drawable/padel"
+        
+        />
+    
+    <LinearLayout
+        android:id="@+id/kategori"
+        android:layout_below="@id/imgHero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        >
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:text="Programming"/>
+        <Button
+            android:id="@+id/kategori"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="IT"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kategori">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/searchPage"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kalingga Padel Muhamad"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@color/textMain"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum ndimentum euismod. Phasellus eu placerat diam. "
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppinsregular"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skils"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@color/textMain"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum ndimentum euismod. Phasellus eu placerat diam. "
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppinsregular"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum ndimentum euismod. Phasellus eu placerat diam. "
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppinsregular"
+                    />
+
+                <Button
+                    android:id="@+id/cp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button"
+                    android:outlineAmbientShadowColor="@color/main"
+                    android:text="Mulai Konsultasi"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    
+   
+
+</RelativeLayout>

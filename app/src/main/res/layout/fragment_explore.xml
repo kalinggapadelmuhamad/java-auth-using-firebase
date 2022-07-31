@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exploreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Explore Mentor Disekitar Kamu"
+        android:textColor="@color/textMain"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/notification" />
+
+    <LinearLayout
+        android:id="@+id/searchPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeader"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="6dp"
+            android:background="@color/bgForm"
+            android:maxLength="100"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/seearch"
+            android:hint="Pemrograman, Sistem Operasi..."
+            android:paddingLeft="10dp"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/button" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/searchPage"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:id="@+id/detail"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/padel"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/dafa"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/hapis"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/mm"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/mmm"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/mmmm"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/padel"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/m"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/mmm"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/mm"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"
+                        android:padding="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/profile"
+        android:layout_marginTop="85dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/m"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedro Sibolga bolga"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="18dp"
+            android:textSize="18dp"
+            android:textColor="@color/textMain"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etFullname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/textRegister"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@color/bgForm"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="Enter Your Fullname"
+                android:maxLength="50"
+                android:paddingLeft="20dp"
+                android:textColor="@color/textMain"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_below="@id/etFullname"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/bgForm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/textMain"
+                android:maxLength="50"
+                android:hint="Enter Your Email"/>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_below="@id/etEmail"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/bgForm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="15dp"
+                android:paddingLeft="20dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/textMain"
+                android:maxLength="50"
+                android:hint="Enter Your Username"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/etUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@color/bgForm"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="Enter Your Password"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/textMain"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/etPassword"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Save Settings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btnRegister"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Logout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18dp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
